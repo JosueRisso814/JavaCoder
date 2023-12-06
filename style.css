@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    background-color: pink;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+body {
+    background-color: rgb(25, 26, 24);
+}
+
+.cajaNotas {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 13px;
+    background-color: pink;
+    width: 400px;
+    height: 550px;
+    display: block;
+}
+
+.cajaNotas div{
+    margin-top: 40px;
+}
+
+.cajaNotas div input{
+    align-items: center;
+    margin-top: 20px;
+}
