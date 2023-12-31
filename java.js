@@ -1,76 +1,107 @@
-// function sacarPromedio () {
+function sacarPromedio () {
 
-//     for(let i = 1; i < 4; i++) {
+    for(let i = 1; i < 4; i++) {
 
-//     let nota1 = Number(prompt("alumno nro " + i + " ingrese su primer nota: "));
-//     let nota2 = Number(prompt("alumno nro " + i + " ingrese su segunda nota: "));
-//     let nota3 = Number(prompt("alumno nro " + i + " ingrese su tercer nota: "));
+    let nota1 = Number(prompt("alumno nro " + i + " ingrese su primer nota: "));
+    let nota2 = Number(prompt("alumno nro " + i + " ingrese su segunda nota: "));
+    let nota3 = Number(prompt("alumno nro " + i + " ingrese su tercer nota: "));
 
-//     let suma = nota1 + nota2 + nota3;
+    let suma = nota1 + nota2 + nota3;
 
-//     let promedio = suma / 3;
+    let promedio = suma / 3;
 
-//     alert("su promedio de notas es: " + promedio);
+    alert("su promedio de notas es: " + promedio);
 
-// if (promedio >= 6) {
-//     alert("Usted esta aprobado. Felicidades! :)")
-// } else {
-//     alert("Usted esta desaprobado :(")
+if (promedio >= 6) {
+    alert("Usted esta aprobado. Felicidades! :)")
+} else {
+    alert("Usted esta desaprobado :(")
 
-// } } }
+} } }
 
-// sacarPromedio();
+sacarPromedio();
 
 
-// personas.splice(2,2, "maxi", "andre")
+// let footer4 = document.getElementById("footer");
+// console.log(footer4);
 
-// let familia = personas.concat (["maxi", "andre", "pepino"]);
+// const titulosFooter = document.getElementsByClassName("listasFooter");
+// console.log(titulosFooter);
 
-// console.log(familia);
+// const titulosFooter2 = document.querySelectorAll(".listasFooter");
+// console.log(titulosFooter2);
 
-// personas.indexOf ("elias");
-// console.log(busqueda);
+// const footer1 = document.querySelector("#footer");
+// console.log(footer1);
 
-// let includePersonas = personas.includes ("risso");
-// console.log(includePersonas);
+// const etiqueta = document.getElementsByTagName("li");
+// console.log(etiqueta);
 
-// reverse => invierte el orden de los elemenos en un Array.
+// const TITULOALUMNOS = document.getElementById("notaAlumnos");
+// TITULOALUMNOS.innerText = "*************";
 
-// let personas = ["josue", "daniel", "risso", "bernabe", "elias"]
+// const SECTION_CONT = document.getElementById("sectionContenedor");
+// SECTION_CONT.innerHTML = `
+//     <div class="card">
+//         <img src="" alt="">
+//         <div>
+//             <h3>
+//                 esto es un titulo
+//             </h3>
+//             <p>
+//                 esto es un parrafo
+//             </p>
+//             <button>comprar</button>
+//         </div>
+//     </div>
+// `;
 
-// personas.reverse ();
-// console.log(personas)
+// PARA CREAR UN ELEMEENTO DESDE JS
+// const contenedor = document.getElementById("contenedor");
 
-// const Familia = [
-//     {nombre:"Josue", edad:22},
-//     {nombre:"elias", edad:13},
-//     {nombre:"berna", edad:14}
-// ]
-// console.log(Familia);
+// const parrafo = document.createElement("p");
 
-// Familia.push({nombre:"maria", edad:18})
-// Familia.reverse();
+// parrafo.innerText = "ESTE ES UN PARRAFO CREADO DESDE JS";
+// parrafo.className = "rojo";
 
-// console.log(Familia);
+//appendchil es un metodo q se utuliza para agregar elemenos nuevos a ahtml
 
-// for (const integrantes of Familia) {
-//     console.log(integrantes);
-// }
+// contenedorr.appendChild(parrafo);
 
-// const personas = [
-//     { nombre: "Juan", edad: 30 },
-//     { nombre: "María", edad: 25 },
-//     { nombre: "Luis", edad: 35 }
-//   ];
+// parrafo.remove();
 
-// for (let i = 0; i < personas.length; i++) {
-//   console.log(personas[i])
-// }
+class Producto {
+    constructor(nombre, precio, img){
+        this.nombre = nombre;
+        this.precio = precio;
+        this.img = img;
+    }
+}
 
-function OperacionSumaResta (operacion){
-  if (operacion === sumar) {
-    return (a , b) => a - b
-  } else if (operacion === restar);
-} 
+// AQUI SE CREAN LOS PORODUCTOS 
+// const PROD1 = new Producto ("yerba", 3000, "yerba.webp");
+// const PROD2 = new Producto ("cafe", 3020, "cafe.webp");
+// const PROD3 = new Producto ("ps5", 999999, "ps5.webp");
+// const PROD4 = new Producto ("lechuga", 99999999999, "lechuga.webp")
 
-console.log(sumar(14, 2));
+// const arrayProductos = [PROD1,PROD2,PROD3,PROD4];
+
+// const contenedorProductos = document.getElementById("contenedorProductos");
+
+// arrayProductos.forEach(producto => {
+//     const div = document.createElement("div");
+
+//     div.className = "card"
+
+//     div.innerHTML = `
+//         <img class="card-img" src="${producto.img}">
+//         <div>
+//             <h3>${producto.nombre}</h3>
+//             <p>${producto.precio}</p>
+//             <button>comprar</button>
+//         </div>
+//         `
+
+//         contenedorProductos.appendChild(div);
+// })
+
